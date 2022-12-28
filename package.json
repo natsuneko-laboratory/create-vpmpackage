@@ -1,0 +1,31 @@
+{
+  "name": "@natsuneko-laboratory/create-vpmpackage",
+  "version": "0.1.0",
+  "description": "GitHub Actions for creating a VPMPackage",
+  "main": "dist/index.js",
+  "repository": "https://github.com/natsuneko-laboratory/create-vpmpackage.git",
+  "author": "Natsune Mochizuki <me@natsuneko.cat>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "package": "ncc build -m src/main.ts -o dist --source-map --license LICENSE"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@natsuneko-laboratory/vpmpackage": "^0.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "@vercel/ncc": "^0.36.0",
+    "eslint": "^8.30.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  }
+}

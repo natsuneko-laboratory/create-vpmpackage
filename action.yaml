@@ -1,0 +1,21 @@
+name: "Create a VPMPackage"
+description: "Create a VPMPackage"
+inputs:
+  root:
+    required: true
+    description: "root directory of the Unity project"
+  package:
+    required: false
+    description: "package.json for packaging"
+  packages:
+    required: false
+    description: "array of package.json for packaging"
+  output:
+    required: false
+    description: "output filename"
+  outputs:
+    required: false
+    description: "array of output filenames"
+runs:
+  using: "node16"
+  main: "dist/index.js"
