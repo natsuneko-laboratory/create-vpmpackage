@@ -64,7 +64,7 @@ jobs:
       - run: |
           mkdir ./dist
 
-      - uses: natsuneko-laboratory/create-vpmpackage@v1
+      - uses: natsuneko-laboratory/create-vpmpackage@v1.0.0
         with:
           packages: |
             Assets/NatsunekoLaboratory/Package1/package.json
