@@ -1,6 +1,6 @@
 {
   "name": "@natsuneko-laboratory/create-vpmpackage",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "GitHub Actions for creating a VPMPackage",
   "main": "dist/index.js",
   "repository": "https://github.com/natsuneko-laboratory/create-vpmpackage.git",
