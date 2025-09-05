@@ -12,8 +12,8 @@ importers:
         specifier: ^1.10.0
         version: 1.10.0
       '@natsuneko-laboratory/vpmpackage':
-        specifier: ^0.1.3
-        version: 0.1.3
+        specifier: ^0.2.0
+        version: 0.2.0
     devDependencies:
       '@eslint/compat':
         specifier: ^1.3.2
@@ -33,24 +33,15 @@ importers:
       eslint:
         specifier: ^9.35.0
         version: 9.35.0
-      eslint-config-airbnb-base:
-        specifier: ^15.0.0
-        version: 15.0.0(eslint-plugin-import@2.26.0)(eslint@9.35.0)
       eslint-config-airbnb-extended:
         specifier: ^2.2.0
         version: 2.2.0(@stylistic/eslint-plugin@3.1.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-typescript@4.4.4)(eslint-plugin-import-x@4.16.1(@typescript-eslint/utils@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-node@0.3.6)(eslint@9.35.0))(eslint-plugin-import@2.26.0)(eslint-plugin-n@17.21.3(eslint@9.35.0)(typescript@4.9.4))(eslint@9.35.0)(typescript-eslint@8.42.0(eslint@9.35.0)(typescript@4.9.4))
-      eslint-config-airbnb-typescript:
-        specifier: ^17.0.0
-        version: 17.0.0(@typescript-eslint/eslint-plugin@8.42.0(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint@9.35.0)(typescript@4.9.4))(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-plugin-import@2.26.0)(eslint@9.35.0)
       eslint-config-prettier:
         specifier: ^8.5.0
         version: 8.5.0(eslint@9.35.0)
       eslint-import-resolver-typescript:
         specifier: ^4.4.4
         version: 4.4.4(eslint-plugin-import-x@4.16.1(@typescript-eslint/utils@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-node@0.3.6)(eslint@9.35.0))(eslint-plugin-import@2.26.0)(eslint@9.35.0)
-      eslint-plugin-import:
-        specifier: ^2.26.0
-        version: 2.26.0(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-typescript@4.4.4)(eslint@9.35.0)
       eslint-plugin-import-x:
         specifier: ^4.16.1
         version: 4.16.1(@typescript-eslint/utils@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-node@0.3.6)(eslint@9.35.0)
@@ -161,8 +152,8 @@ packages:
   '@napi-rs/wasm-runtime@0.2.12':
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
 
-  '@natsuneko-laboratory/vpmpackage@0.1.3':
-    resolution: {integrity: sha512-DD2TpxiqA/ILSJvSGWuGmo/SiaA7nX++JiylVrz101WG1ju3imQJ5+9zajIPg5tDsuFTfXWFsWyBQgvmE00BZw==}
+  '@natsuneko-laboratory/vpmpackage@0.2.0':
+    resolution: {integrity: sha512-FuA8zSOQlXlNZdfY78WzDIqTGKQeKLoQqzcrvmP9dGRyZHrVcqE6Eb1X49HeJelBFPcd9TwYifOKcuWTIEniow==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -369,9 +360,9 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  adm-zip@0.5.10:
-    resolution: {integrity: sha512-x0HvcHqVJNTPk/Bw8JbLWlWoo6Wwnsug0fnYYro1HBrjxZ3G7/AZk7Ahv8JwDe1uIcz8eBqvu86FuF1POiG7vQ==}
-    engines: {node: '>=6.0'}
+  adm-zip@0.5.16:
+    resolution: {integrity: sha512-TGw5yVi4saajsSEgz25grObGHEUaDrniwvA2qwSC060KfqGPdglhvPMA2lPIoxs3PQIItj2iag35fONcQqgUaQ==}
+    engines: {node: '>=12.0'}
 
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
@@ -452,15 +443,6 @@ packages:
       supports-color:
         optional: true
 
-  debug@4.3.4:
-    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
-    engines: {node: '>=6.0'}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-
   debug@4.4.1:
     resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
     engines: {node: '>=6.0'}
@@ -506,13 +488,6 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-config-airbnb-base@15.0.0:
-    resolution: {integrity: sha512-xaX3z4ZZIcFLvh2oUNvcX5oEofXda7giYmuplVxoOg5A7EXJMrUyqRgR+mhDhPK8LZ4PttFOBvCYDbX3sUoUig==}
-    engines: {node: ^10.12.0 || >=12.0.0}
-    peerDependencies:
-      eslint: ^7.32.0 || ^8.2.0
-      eslint-plugin-import: ^2.25.2
-
   eslint-config-airbnb-extended@2.2.0:
     resolution: {integrity: sha512-3JbkyGR/6bkAsNBV39VR8wj0YP378nIhVD+sKd8kXDkHIQ45I8K4wBYUQcNdOW4IvPyJgYmZyJd23bUmQ2yXRg==}
     peerDependencies:
@@ -551,14 +526,6 @@ packages:
         optional: true
       typescript-eslint:
         optional: true
-
-  eslint-config-airbnb-typescript@17.0.0:
-    resolution: {integrity: sha512-elNiuzD0kPAPTXjFWg+lE24nMdHMtuxgYoD30OyMD6yrW1AhFZPAg27VX7d3tzOErw+dgJTNWfRSDqEcXb4V0g==}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^5.13.0
-      '@typescript-eslint/parser': ^5.0.0
-      eslint: ^7.32.0 || ^8.2.0
-      eslint-plugin-import: ^2.25.3
 
   eslint-config-prettier@8.5.0:
     resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
@@ -750,8 +717,8 @@ packages:
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
 
-  fs-extra@11.1.0:
-    resolution: {integrity: sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==}
+  fs-extra@11.3.1:
+    resolution: {integrity: sha512-eXvGGwZ5CL17ZSwHWd3bbgk7UUpF6IFHtP57NYYakPvHOs8GDgDe5KJI36jIJzDkJ6eJjuzRA8eBQb6SkKue0g==}
     engines: {node: '>=14.14'}
 
   function-bind@1.1.1:
@@ -969,9 +936,6 @@ packages:
   ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
 
-  ms@2.1.2:
-    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
-
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
@@ -992,10 +956,6 @@ packages:
 
   object.assign@4.1.4:
     resolution: {integrity: sha512-1mxKf0e58bvyjSCtKYY4sRe9itRk3PJpquJOjeIkz885CczcI4IvJJDLPS72oowuSh+pBxUFROpX+TU++hxhZQ==}
-    engines: {node: '>= 0.4'}
-
-  object.entries@1.1.6:
-    resolution: {integrity: sha512-leTPzo4Zvg3pmbQ3rDK69Rl8GQvIqMWubrkxONG9/ojtFE2rD9fjMKfSI5BxW3osRH1m6VdzmqK8oAY9aT4x5w==}
     engines: {node: '>= 0.4'}
 
   object.values@1.1.6:
@@ -1081,10 +1041,6 @@ packages:
 
   safe-regex-test@1.0.0:
     resolution: {integrity: sha512-JBUUzyOgEwXQY1NuPtvcj/qcBDbDmEvWufhlnXZIm75DEHp+afM1r1ujJpJsV/gSM4t59tpDyPi1sd6ZaPFfsA==}
-
-  semver@6.3.0:
-    resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==}
-    hasBin: true
 
   semver@7.7.2:
     resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
@@ -1313,10 +1269,10 @@ snapshots:
       '@tybys/wasm-util': 0.10.0
     optional: true
 
-  '@natsuneko-laboratory/vpmpackage@0.1.3':
+  '@natsuneko-laboratory/vpmpackage@0.2.0':
     dependencies:
-      adm-zip: 0.5.10
-      fs-extra: 11.1.0
+      adm-zip: 0.5.16
+      fs-extra: 11.3.1
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1353,7 +1309,8 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/json5@0.0.29': {}
+  '@types/json5@0.0.29':
+    optional: true
 
   '@types/node@18.11.18': {}
 
@@ -1380,7 +1337,7 @@ snapshots:
       '@typescript-eslint/types': 8.42.0
       '@typescript-eslint/typescript-estree': 8.42.0(typescript@4.9.4)
       '@typescript-eslint/visitor-keys': 8.42.0
-      debug: 4.3.4
+      debug: 4.4.1
       eslint: 9.35.0
       typescript: 4.9.4
     transitivePeerDependencies:
@@ -1390,7 +1347,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.42.0(typescript@4.9.4)
       '@typescript-eslint/types': 8.42.0
-      debug: 4.3.4
+      debug: 4.4.1
       typescript: 4.9.4
     transitivePeerDependencies:
       - supports-color
@@ -1409,7 +1366,7 @@ snapshots:
       '@typescript-eslint/types': 8.42.0
       '@typescript-eslint/typescript-estree': 8.42.0(typescript@4.9.4)
       '@typescript-eslint/utils': 8.42.0(eslint@9.35.0)(typescript@4.9.4)
-      debug: 4.3.4
+      debug: 4.4.1
       eslint: 9.35.0
       ts-api-utils: 2.1.0(typescript@4.9.4)
       typescript: 4.9.4
@@ -1424,7 +1381,7 @@ snapshots:
       '@typescript-eslint/tsconfig-utils': 8.42.0(typescript@4.9.4)
       '@typescript-eslint/types': 8.42.0
       '@typescript-eslint/visitor-keys': 8.42.0
-      debug: 4.3.4
+      debug: 4.4.1
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -1517,7 +1474,7 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  adm-zip@0.5.10: {}
+  adm-zip@0.5.16: {}
 
   ajv@6.12.6:
     dependencies:
@@ -1539,6 +1496,7 @@ snapshots:
       es-abstract: 1.20.5
       get-intrinsic: 1.1.3
       is-string: 1.0.7
+    optional: true
 
   array.prototype.flat@1.3.1:
     dependencies:
@@ -1546,6 +1504,7 @@ snapshots:
       define-properties: 1.1.4
       es-abstract: 1.20.5
       es-shim-unscopables: 1.0.0
+    optional: true
 
   balanced-match@1.0.2: {}
 
@@ -1566,6 +1525,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.1
       get-intrinsic: 1.1.3
+    optional: true
 
   callsites@3.1.0: {}
 
@@ -1595,14 +1555,12 @@ snapshots:
   debug@2.6.9:
     dependencies:
       ms: 2.0.0
+    optional: true
 
   debug@3.2.7:
     dependencies:
       ms: 2.1.3
-
-  debug@4.3.4:
-    dependencies:
-      ms: 2.1.2
+    optional: true
 
   debug@4.4.1:
     dependencies:
@@ -1614,10 +1572,12 @@ snapshots:
     dependencies:
       has-property-descriptors: 1.0.0
       object-keys: 1.1.1
+    optional: true
 
   doctrine@2.1.0:
     dependencies:
       esutils: 2.0.3
+    optional: true
 
   enhanced-resolve@5.18.3:
     dependencies:
@@ -1651,16 +1611,19 @@ snapshots:
       string.prototype.trimend: 1.0.6
       string.prototype.trimstart: 1.0.6
       unbox-primitive: 1.0.2
+    optional: true
 
   es-shim-unscopables@1.0.0:
     dependencies:
       has: 1.0.3
+    optional: true
 
   es-to-primitive@1.2.1:
     dependencies:
       is-callable: 1.2.7
       is-date-object: 1.0.5
       is-symbol: 1.0.4
+    optional: true
 
   escape-string-regexp@4.0.0: {}
 
@@ -1668,15 +1631,6 @@ snapshots:
     dependencies:
       eslint: 9.35.0
       semver: 7.7.2
-
-  eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.26.0)(eslint@9.35.0):
-    dependencies:
-      confusing-browser-globals: 1.0.11
-      eslint: 9.35.0
-      eslint-plugin-import: 2.26.0(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-typescript@4.4.4)(eslint@9.35.0)
-      object.assign: 4.1.4
-      object.entries: 1.1.6
-      semver: 6.3.0
 
   eslint-config-airbnb-extended@2.2.0(@stylistic/eslint-plugin@3.1.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-typescript@4.4.4)(eslint-plugin-import-x@4.16.1(@typescript-eslint/utils@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-node@0.3.6)(eslint@9.35.0))(eslint-plugin-import@2.26.0)(eslint-plugin-n@17.21.3(eslint@9.35.0)(typescript@4.9.4))(eslint@9.35.0)(typescript-eslint@8.42.0(eslint@9.35.0)(typescript@4.9.4)):
     dependencies:
@@ -1690,14 +1644,6 @@ snapshots:
       eslint-plugin-import-x: 4.16.1(@typescript-eslint/utils@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-node@0.3.6)(eslint@9.35.0)
       eslint-plugin-n: 17.21.3(eslint@9.35.0)(typescript@4.9.4)
       typescript-eslint: 8.42.0(eslint@9.35.0)(typescript@4.9.4)
-
-  eslint-config-airbnb-typescript@17.0.0(@typescript-eslint/eslint-plugin@8.42.0(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint@9.35.0)(typescript@4.9.4))(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-plugin-import@2.26.0)(eslint@9.35.0):
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 8.42.0(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint@9.35.0)(typescript@4.9.4)
-      '@typescript-eslint/parser': 8.42.0(eslint@9.35.0)(typescript@4.9.4)
-      eslint: 9.35.0
-      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.26.0)(eslint@9.35.0)
-      eslint-plugin-import: 2.26.0(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-typescript@4.4.4)(eslint@9.35.0)
 
   eslint-config-prettier@8.5.0(eslint@9.35.0):
     dependencies:
@@ -1716,6 +1662,7 @@ snapshots:
       resolve: 1.22.1
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   eslint-import-resolver-typescript@4.4.4(eslint-plugin-import-x@4.16.1(@typescript-eslint/utils@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-node@0.3.6)(eslint@9.35.0))(eslint-plugin-import@2.26.0)(eslint@9.35.0):
     dependencies:
@@ -1743,6 +1690,7 @@ snapshots:
       eslint-import-resolver-typescript: 4.4.4(eslint-plugin-import-x@4.16.1(@typescript-eslint/utils@8.42.0(eslint@9.35.0)(typescript@4.9.4))(eslint-import-resolver-node@0.3.6)(eslint@9.35.0))(eslint-plugin-import@2.26.0)(eslint@9.35.0)
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   eslint-plugin-es-x@7.8.0(eslint@9.35.0):
     dependencies:
@@ -1791,6 +1739,7 @@ snapshots:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
+    optional: true
 
   eslint-plugin-n@17.21.3(eslint@9.35.0)(typescript@4.9.4):
     dependencies:
@@ -1927,13 +1876,14 @@ snapshots:
 
   flatted@3.3.3: {}
 
-  fs-extra@11.1.0:
+  fs-extra@11.3.1:
     dependencies:
       graceful-fs: 4.2.10
       jsonfile: 6.1.0
       universalify: 2.0.0
 
-  function-bind@1.1.1: {}
+  function-bind@1.1.1:
+    optional: true
 
   function.prototype.name@1.1.5:
     dependencies:
@@ -1941,19 +1891,23 @@ snapshots:
       define-properties: 1.1.4
       es-abstract: 1.20.5
       functions-have-names: 1.2.3
+    optional: true
 
-  functions-have-names@1.2.3: {}
+  functions-have-names@1.2.3:
+    optional: true
 
   get-intrinsic@1.1.3:
     dependencies:
       function-bind: 1.1.1
       has: 1.0.3
       has-symbols: 1.0.3
+    optional: true
 
   get-symbol-description@1.0.0:
     dependencies:
       call-bind: 1.0.2
       get-intrinsic: 1.1.3
+    optional: true
 
   get-tsconfig@4.10.1:
     dependencies:
@@ -1978,28 +1932,34 @@ snapshots:
   gopd@1.0.1:
     dependencies:
       get-intrinsic: 1.1.3
+    optional: true
 
   graceful-fs@4.2.10: {}
 
   graphemer@1.4.0: {}
 
-  has-bigints@1.0.2: {}
+  has-bigints@1.0.2:
+    optional: true
 
   has-flag@4.0.0: {}
 
   has-property-descriptors@1.0.0:
     dependencies:
       get-intrinsic: 1.1.3
+    optional: true
 
-  has-symbols@1.0.3: {}
+  has-symbols@1.0.3:
+    optional: true
 
   has-tostringtag@1.0.0:
     dependencies:
       has-symbols: 1.0.3
+    optional: true
 
   has@1.0.3:
     dependencies:
       function-bind: 1.1.1
+    optional: true
 
   ignore@5.3.2: {}
 
@@ -2017,29 +1977,35 @@ snapshots:
       get-intrinsic: 1.1.3
       has: 1.0.3
       side-channel: 1.0.4
+    optional: true
 
   is-bigint@1.0.4:
     dependencies:
       has-bigints: 1.0.2
+    optional: true
 
   is-boolean-object@1.1.2:
     dependencies:
       call-bind: 1.0.2
       has-tostringtag: 1.0.0
+    optional: true
 
   is-bun-module@2.0.0:
     dependencies:
       semver: 7.7.2
 
-  is-callable@1.2.7: {}
+  is-callable@1.2.7:
+    optional: true
 
   is-core-module@2.11.0:
     dependencies:
       has: 1.0.3
+    optional: true
 
   is-date-object@1.0.5:
     dependencies:
       has-tostringtag: 1.0.0
+    optional: true
 
   is-extglob@2.1.1: {}
 
@@ -2047,11 +2013,13 @@ snapshots:
     dependencies:
       is-extglob: 2.1.1
 
-  is-negative-zero@2.0.2: {}
+  is-negative-zero@2.0.2:
+    optional: true
 
   is-number-object@1.0.7:
     dependencies:
       has-tostringtag: 1.0.0
+    optional: true
 
   is-number@7.0.0: {}
 
@@ -2059,22 +2027,27 @@ snapshots:
     dependencies:
       call-bind: 1.0.2
       has-tostringtag: 1.0.0
+    optional: true
 
   is-shared-array-buffer@1.0.2:
     dependencies:
       call-bind: 1.0.2
+    optional: true
 
   is-string@1.0.7:
     dependencies:
       has-tostringtag: 1.0.0
+    optional: true
 
   is-symbol@1.0.4:
     dependencies:
       has-symbols: 1.0.3
+    optional: true
 
   is-weakref@1.0.2:
     dependencies:
       call-bind: 1.0.2
+    optional: true
 
   isexe@2.0.0: {}
 
@@ -2091,6 +2064,7 @@ snapshots:
   json5@1.0.1:
     dependencies:
       minimist: 1.2.7
+    optional: true
 
   jsonfile@6.1.0:
     dependencies:
@@ -2132,11 +2106,11 @@ snapshots:
     dependencies:
       brace-expansion: 2.0.2
 
-  minimist@1.2.7: {}
+  minimist@1.2.7:
+    optional: true
 
-  ms@2.0.0: {}
-
-  ms@2.1.2: {}
+  ms@2.0.0:
+    optional: true
 
   ms@2.1.3: {}
 
@@ -2144,9 +2118,11 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  object-inspect@1.12.2: {}
+  object-inspect@1.12.2:
+    optional: true
 
-  object-keys@1.1.1: {}
+  object-keys@1.1.1:
+    optional: true
 
   object.assign@4.1.4:
     dependencies:
@@ -2154,18 +2130,14 @@ snapshots:
       define-properties: 1.1.4
       has-symbols: 1.0.3
       object-keys: 1.1.1
-
-  object.entries@1.1.6:
-    dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.20.5
+    optional: true
 
   object.values@1.1.6:
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.1.4
       es-abstract: 1.20.5
+    optional: true
 
   optionator@0.9.4:
     dependencies:
@@ -2192,7 +2164,8 @@ snapshots:
 
   path-key@3.1.1: {}
 
-  path-parse@1.0.7: {}
+  path-parse@1.0.7:
+    optional: true
 
   picomatch@2.3.1: {}
 
@@ -2215,6 +2188,7 @@ snapshots:
       call-bind: 1.0.2
       define-properties: 1.1.4
       functions-have-names: 1.2.3
+    optional: true
 
   resolve-from@4.0.0: {}
 
@@ -2225,6 +2199,7 @@ snapshots:
       is-core-module: 2.11.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+    optional: true
 
   reusify@1.0.4: {}
 
@@ -2237,8 +2212,7 @@ snapshots:
       call-bind: 1.0.2
       get-intrinsic: 1.1.3
       is-regex: 1.1.4
-
-  semver@6.3.0: {}
+    optional: true
 
   semver@7.7.2: {}
 
@@ -2253,6 +2227,7 @@ snapshots:
       call-bind: 1.0.2
       get-intrinsic: 1.1.3
       object-inspect: 1.12.2
+    optional: true
 
   stable-hash-x@0.2.0: {}
 
@@ -2261,14 +2236,17 @@ snapshots:
       call-bind: 1.0.2
       define-properties: 1.1.4
       es-abstract: 1.20.5
+    optional: true
 
   string.prototype.trimstart@1.0.6:
     dependencies:
       call-bind: 1.0.2
       define-properties: 1.1.4
       es-abstract: 1.20.5
+    optional: true
 
-  strip-bom@3.0.0: {}
+  strip-bom@3.0.0:
+    optional: true
 
   strip-json-comments@3.1.1: {}
 
@@ -2276,7 +2254,8 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
-  supports-preserve-symlinks-flag@1.0.0: {}
+  supports-preserve-symlinks-flag@1.0.0:
+    optional: true
 
   synckit@0.11.11:
     dependencies:
@@ -2308,6 +2287,7 @@ snapshots:
       json5: 1.0.1
       minimist: 1.2.7
       strip-bom: 3.0.0
+    optional: true
 
   tslib@2.8.1:
     optional: true
@@ -2337,6 +2317,7 @@ snapshots:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+    optional: true
 
   universalify@2.0.0: {}
 
@@ -2377,6 +2358,7 @@ snapshots:
       is-number-object: 1.0.7
       is-string: 1.0.7
       is-symbol: 1.0.4
+    optional: true
 
   which@2.0.2:
     dependencies:

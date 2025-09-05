@@ -1,7 +1,7 @@
+import fs from "node:fs";
+
 import { setFailed } from "@actions/core";
 import { archive } from "@natsuneko-laboratory/vpmpackage";
-import fs from "fs";
-
 import {
   getOutputInput,
   getOutputsInput,
