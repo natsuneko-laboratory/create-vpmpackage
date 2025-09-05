@@ -12,19 +12,19 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const node_fs_1 = __importDefault(require("node:fs"));
 const core_1 = require("@actions/core");
 const vpmpackage_1 = require("@natsuneko-laboratory/vpmpackage");
-const fs_1 = __importDefault(require("fs"));
 const input_1 = require("./input");
 function isExistsFileAsync(filepath) {
     return __awaiter(this, void 0, void 0, function* () {
-        return fs_1.default.existsSync(filepath);
+        return node_fs_1.default.existsSync(filepath);
     });
 }
 function readPackageJson(filepath) {
     return __awaiter(this, void 0, void 0, function* () {
         return new Promise((resolve, reject) => {
-            fs_1.default.readFile(filepath, { encoding: "utf-8" }, (err, data) => {
+            node_fs_1.default.readFile(filepath, { encoding: "utf-8" }, (err, data) => {
                 if (err)
                     return reject(err);
                 return resolve(JSON.parse(data));
