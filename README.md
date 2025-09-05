@@ -29,14 +29,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           lfs: true
 
       - run: |
           mkdir ./dist
 
-      - uses: natsuneko-laboratory/create-vpmpackage@v1
+      - uses: natsuneko-laboratory/create-vpmpackage@v1.1.1 # You should use SHA hash
         with:
           package: Assets/NatsunekoLaboratory/Package/package.json
           output: dist/Package.zip
@@ -57,14 +57,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           lfs: true
 
       - run: |
           mkdir ./dist
 
-      - uses: natsuneko-laboratory/create-vpmpackage@v1.0.0
+      - uses: natsuneko-laboratory/create-vpmpackage@v1.1.1 # You should use SHA hash
         with:
           packages: |
             Assets/NatsunekoLaboratory/Package1/package.json
