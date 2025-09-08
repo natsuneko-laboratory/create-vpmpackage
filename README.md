@@ -8,11 +8,10 @@ Create VPMPackage without Unity and additional instructions in GitHub Actions
 | ---------- | ---------- | ----------------------------------- | ---------------------------------------------------- |
 | `package`  | `string`   | No (default: `null`) \*             | package.json for packaging                           |
 | `packages` | `string[]` | No (default: `null`) \*             | array of package.json for packaging                  |
-| `root`     | `string`   | No (default: `.`)                   | root directory                                       |
 | `output`   | `string`   | Yes if `meta` or `package` provided | output filename such as `Neko.unitypackage`          |
 | `outputs`  | `string[]` | Yes if `packages` provided          | array of output filename such as `Neko.unitypackage` |
 
-<small>\* specify one of `meta`, `package`, or `packages`</small>
+<small>\* specify one of `package`, or `packages` is required</small>
 
 ### using `package`
 
