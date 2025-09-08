@@ -1,9 +1,6 @@
 name: "Create a VPMPackage"
 description: "Create a VPMPackage"
 inputs:
-  root:
-    required: true
-    description: "root directory of the Unity project"
   package:
     required: false
     description: "package.json for packaging"
