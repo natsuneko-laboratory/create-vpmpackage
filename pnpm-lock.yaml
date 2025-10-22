@@ -12,8 +12,8 @@ importers:
         specifier: ^1.11.1
         version: 1.11.1
       '@natsuneko-laboratory/vpmpackage':
-        specifier: ^0.3.0
-        version: 0.3.0
+        specifier: ^0.3.2
+        version: 0.3.2
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.2.7
@@ -99,8 +99,8 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@natsuneko-laboratory/vpmpackage@0.3.0':
-    resolution: {integrity: sha512-XISyydeHcD2uo3heopbgFfkThZ9/dSlN/cA8Rkohb4rpE78ZBd+tVpRiCWBn1mmh8OSd8EEjJ4YH8MC1tE6gDQ==}
+  '@natsuneko-laboratory/vpmpackage@0.3.2':
+    resolution: {integrity: sha512-xS5uTvAl/Spj7NXg/LwBtY/9Hyq9vhryqKx1MWB9HBqhejiMMwIvkJCBTq8XqtKDnjXVYimCQk+HDlDTlWmu8Q==}
 
   '@types/node@24.9.1':
     resolution: {integrity: sha512-QoiaXANRkSXK6p0Duvt56W208du4P9Uye9hWLWgGMDTEoKPhuenzNcC4vGUmrNkiOKTlIrBoyNQYNpSwfEZXSg==}
@@ -198,7 +198,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@natsuneko-laboratory/vpmpackage@0.3.0':
+  '@natsuneko-laboratory/vpmpackage@0.3.2':
     dependencies:
       adm-zip: 0.5.16
       fs-extra: 11.3.2
