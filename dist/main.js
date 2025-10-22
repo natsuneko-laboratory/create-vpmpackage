@@ -33,8 +33,8 @@ function readPackageJson(filepath) {
     });
 }
 function runForPackageInput(args) {
-    var _a, _b;
     return __awaiter(this, void 0, void 0, function* () {
+        var _a, _b;
         const pkg = (_a = args === null || args === void 0 ? void 0 : args.pkg) !== null && _a !== void 0 ? _a : (0, input_1.getPackageInput)();
         const out = (_b = args === null || args === void 0 ? void 0 : args.out) !== null && _b !== void 0 ? _b : (0, input_1.getOutputInput)();
         const isExists = yield isExistsFileAsync(pkg);

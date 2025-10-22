@@ -1,6 +1,6 @@
 {
   "name": "@natsuneko-laboratory/create-vpmpackage",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "GitHub Actions for creating a VPMPackage",
   "main": "dist/index.js",
   "repository": "https://github.com/natsuneko-laboratory/create-vpmpackage.git",
@@ -12,13 +12,13 @@
     "package": "ncc build -m src/main.ts -o dist --source-map --license LICENSE"
   },
   "dependencies": {
-    "@actions/core": "^1.10.0",
+    "@actions/core": "^1.11.1",
     "@natsuneko-laboratory/vpmpackage": "^0.3.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.7",
-    "@types/node": "^18.11.18",
-    "@vercel/ncc": "^0.36.0",
-    "typescript": "^4.9.4"
+    "@types/node": "^24.9.1",
+    "@vercel/ncc": "^0.38.4",
+    "typescript": "^5.9.3"
   }
 }
