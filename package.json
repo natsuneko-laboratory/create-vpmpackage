@@ -12,7 +12,7 @@
     "package": "ncc build -m src/main.ts -o dist --source-map --license LICENSE"
   },
   "dependencies": {
-    "@actions/core": "^1.11.1",
+    "@actions/core": "^2.0.2",
     "@natsuneko-laboratory/vpmpackage": "^0.5.2"
   },
   "devDependencies": {
